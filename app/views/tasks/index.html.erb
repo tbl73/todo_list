@@ -2,7 +2,13 @@
   <div class="col-md-4">
     <p></p>
 <!-- This hides the form when the page is first loaded -->
-    <%= link_to 'New Task', new_task_path, class: "btn btn-info pull-right",remote: true %>
+    <div class="pull-right">
+      <%= link_to new_task_path, remote: true do %>
+        New Task <i class="fa fa-plus-circle" aria-hidden="true"></i>
+      <% end %>
+    </div>
+
+
 
     <div id="task-form" style="display:none;"></div>
   </div>
@@ -10,9 +16,9 @@
   <div class="col-md-8">
     <h2 class="text-center">Tasks</h2>
     <div id="tasks">
-      <ul>
+      <div class="row">
         <%= render @tasks %>
-      </ul>
+      </div>
     </div>
   </div>
 </div>

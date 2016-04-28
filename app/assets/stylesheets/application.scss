@@ -31,3 +31,19 @@ a:hover{
 .invisible {
 	display: none;
 }
+
+body {
+  background: rgb(197, 221, 224);
+}
+
+h2 {
+  color: lightslategrey;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+#task-form {
+  margin:10px 0;
+  background: lightslategrey;
+  padding: 10px 10px 5px;
+}
