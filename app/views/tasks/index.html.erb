@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<!-- This hides the form when the page is first loaded -->
+<%= link_to 'New Task', new_task_path, remote: true %>
+
+<div id="task-form" style="display:none;"></div>
+
+<!-- Need to display tasks that are already made -->
+<h2>Tasks</h2>
+<div id="tasks">
+  <ul>
+    <%= render @tasks %>
+  </ul>
+</div>

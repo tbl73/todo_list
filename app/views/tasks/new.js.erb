@@ -1,0 +1,7 @@
+/*This uses ERB and Jquery to render the partial form instead 
+of the new page*/
+$('#task-form').html("<%= j (render 'form') %>");
+/*This changes the hidden form on index*/
+$('#task-form').slideDown(350);
+
+
