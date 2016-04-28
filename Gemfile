@@ -13,6 +13,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'momentjs-rails', '>=2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

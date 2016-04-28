@@ -1,14 +1,18 @@
-<p id="notice"><%= notice %></p>
-
+<div class="row">
+  <div class="col-md-4">
+    <p></p>
 <!-- This hides the form when the page is first loaded -->
-<%= link_to 'New Task', new_task_path, remote: true %>
+    <%= link_to 'New Task', new_task_path, class: "btn btn-info pull-right",remote: true %>
 
-<div id="task-form" style="display:none;"></div>
-
+    <div id="task-form" style="display:none;"></div>
+  </div>
 <!-- Need to display tasks that are already made -->
-<h2>Tasks</h2>
-<div id="tasks">
-  <ul>
-    <%= render @tasks %>
-  </ul>
+  <div class="col-md-8">
+    <h2 class="text-center">Tasks</h2>
+    <div id="tasks">
+      <ul>
+        <%= render @tasks %>
+      </ul>
+    </div>
+  </div>
 </div>

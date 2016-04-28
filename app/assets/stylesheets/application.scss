@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+@import 'bootstrap';
+@import 'bootstrap-sprockets';
+@import 'font-awesome';
+@import 'bootstrap-datetimepicker';
+
+a {
+text-decoration: none;
+}
+
+a:hover{
+	background: none;
+	text-decoration: line-through;
+	color: #336699;
+}
+
+.invisible {
+	display: none;
+}
